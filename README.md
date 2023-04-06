@@ -68,7 +68,7 @@ console.log('All jobs are done!');
 
 The `JobExecutor` class is the main class of this library and provides the following methods and properties:
 
-#### `constructor(options: JobExecutorOptions)`
+- #### `constructor(options: JobExecutorOptions)`
 
 Creates a new instance of the JobExecutor class with the given options. The available options are:
 
@@ -80,19 +80,19 @@ Creates a new instance of the JobExecutor class with the given options. The avai
 | allJobDone | `() => void`                          | An optional callback function that will be called when all jobs have completed successfully          |
 |            |
 
-#### `size: number`
+- #### `size: number`
 
 A read-only property that returns the number of currently active jobs.
 
-#### `execute(size: number): Promise<void>`
+- #### `execute(size: number): Promise<void>`
 
 Executes the given number of jobs asynchronously using the `jobTask` function. The method returns a Promise that resolves when all jobs have completed either successfully or failed.
 
-#### `terminate(size?: number): Promise<number>`
+- #### `terminate(size?: number): Promise<number>`
 
 Aborts the given number of active jobs and waits for them to complete. If no argument is provided, all active jobs will be terminated. It returns the number of jobs that were successfully terminated.
 
-#### `wait(): Promise<void>`
+- #### `wait(): Promise<void>`
 
 Waits for all currently active jobs to complete before resolving. If there are no active jobs, the Promise will resolve immediately.
 
