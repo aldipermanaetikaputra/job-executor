@@ -1,7 +1,7 @@
 {
   "name": "job-executor",
   "version": "1.0.0",
-  "description": "A simple and lightweight library that runs a series of asynchronous tasks in parallel with adjustable concurrency limits",
+  "description": "A simple and lightweight library that runs a series of asynchronous tasks in parallel with adjustable concurrency limits.",
   "url": "https://github.com/aldipermanaetikaputra/job-executor",
   "keywords": [
     "job",
