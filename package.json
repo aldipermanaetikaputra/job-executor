@@ -1,0 +1,56 @@
+{
+  "name": "job-executor",
+  "version": "1.0.0",
+  "description": "A simple and lightweight library that runs a series of asynchronous tasks in parallel with adjustable concurrency limits",
+  "url": "https://github.com/aldipermanaetikaputra/job-executor",
+  "keywords": [
+    "job",
+    "executor",
+    "job-executor",
+    "task",
+    "async",
+    "concurrency",
+    "parallelism"
+  ],
+  "author": "Aldi Permana Etika Putra <aldipermanaetikaputra@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aldipermanaetikaputra/job-executor/issues"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "version": "yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aldipermanaetikaputra/job-executor.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "ts-deferred": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/minimist": "^1.2.2",
+    "@types/tmp": "^0.2.3",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.7",
+    "tmp": "^0.2.1",
+    "ts-jest": "^29.0.5",
+    "typescript": "4.9.5"
+  }
+}
